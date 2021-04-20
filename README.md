@@ -12,6 +12,12 @@
 [![Star on GitHub][github-star-badge]][github-star]
 [![Tweet][twitter-badge]][twitter]
 
+
+# Disclaimer
+
+This is a hobby project heavily based on [angular-electron by Maximegris](https://github.com/maximegris/angular-electron), which was used as a seed to make this project, below for now we mantain the original `readme` for documentation purposes.
+
+
 # Introduction
 
 Bootstrap and package your project with Angular 11 and Electron 12 (Typescript + SASS + Hot Reload) for creating Desktop applications.
@@ -132,16 +138,16 @@ Note: To make it work behind a proxy, you can add this proxy exception in your t
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-red.svg
 [prs]: http://makeapullrequest.com
 
-[linux-build-badge]: https://github.com/maximegris/angular-electron/workflows/Linux%20Build/badge.svg
-[linux-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22Linux+Build%22
-[macos-build-badge]: https://github.com/maximegris/angular-electron/workflows/MacOS%20Build/badge.svg
-[macos-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22MacOS+Build%22
-[windows-build-badge]: https://github.com/maximegris/angular-electron/workflows/Windows%20Build/badge.svg
-[windows-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22Windows+Build%22
+[linux-build-badge]: https://github.com/santiagovaldez/pat-report/workflows/Linux%20Build/badge.svg
+[linux-build]: https://github.com/santiagovaldez/pat-report/actions?query=workflow%3A%22Linux+Build%22
+[macos-build-badge]: https://github.com/santiagovaldez/pat-report/workflows/MacOS%20Build/badge.svg
+[macos-build]: https://github.com/santiagovaldez/pat-report/actions?query=workflow%3A%22MacOS+Build%22
+[windows-build-badge]: https://github.com/santiagovaldez/pat-report/workflows/Windows%20Build/badge.svg
+[windows-build]: https://github.com/santiagovaldez/pat-report/actions?query=workflow%3A%22Windows+Build%22
 
-[github-watch-badge]: https://img.shields.io/github/watchers/maximegris/angular-electron.svg?style=social
-[github-watch]: https://github.com/maximegris/angular-electron/watchers
-[github-star-badge]: https://img.shields.io/github/stars/maximegris/angular-electron.svg?style=social
-[github-star]: https://github.com/maximegris/angular-electron/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/maximegris/angular-electron%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/maximegris/angular-electron.svg?style=social
+[github-watch-badge]: https://img.shields.io/github/watchers/santiagovaldez/pat-report.svg?style=social
+[github-watch]: https://github.com/santiagovaldez/pat-report/watchers
+[github-star-badge]: https://img.shields.io/github/stars/santiagovaldez/pat-report.svg?style=social
+[github-star]: https://github.com/santiagovaldez/pat-report/stargazers
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/santiagovaldez/pat-report%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/santiagovaldez/pat-report.svg?style=social
