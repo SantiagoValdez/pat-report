@@ -1,11 +1,11 @@
 {
-  "name": "angular-electron",
-  "version": "9.0.7",
-  "description": "Angular 11 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "name": "pat-report",
+  "version": "0.1",
+  "description": "PatReport is a simple desktop app for pathological reports.",
+  "homepage": "https://github.com/santiagovaldez/pat-report",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Santiago Valdez",
+    "email": "hola@santiagovaldez.me"
   },
   "keywords": [
     "angular",
@@ -18,7 +18,10 @@
     "sass",
     "windows",
     "mac",
-    "linux"
+    "linux",
+		"pathology",
+		"pathological",
+		"reports"
   ],
   "main": "main.js",
   "private": true,
