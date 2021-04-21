@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
-import { ipcRenderer, webFrame } from 'electron';
+import { ipcRenderer, webFrame, ipcMain } from 'electron';
 import * as remote from '@electron/remote';
 import * as childProcess from 'child_process';
 import * as fs from 'fs';
@@ -16,6 +16,7 @@ export class ElectronService {
   remote: typeof remote;
   childProcess: typeof childProcess;
   fs: typeof fs;
+  ipcMain: typeof ipcMain;
 
   get isElectron(): boolean {
     return !!(window && window.process && window.process.type);
@@ -26,6 +27,7 @@ export class ElectronService {
     if (this.isElectron) {
       this.ipcRenderer = window.require('electron').ipcRenderer;
       this.webFrame = window.require('electron').webFrame;
+      this.ipcMain = window.require('electron').ipcMain;
 
       // If you want to use remote object in renderer process, please set enableRemoteModule to true in main.ts
       // this.remote = window.require('@electron/remote');
@@ -35,4 +37,7 @@ export class ElectronService {
       this.fs = window.require('fs');
     }
   }
+
+
+
 }
