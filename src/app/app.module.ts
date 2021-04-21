@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,6 +17,15 @@ import { DetailModule } from './detail/detail.module';
 
 import { AppComponent } from './app.component';
 
+//TaigaUI
+import {
+  TuiRootModule,
+  TuiNotificationsModule,
+  TuiDialogModule
+} from '@taiga-ui/core';
+
+import { iconsPathFactory, TUI_ICONS_PATH } from '@taiga-ui/core';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     CoreModule,
@@ -38,9 +49,15 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    TuiRootModule,
+    TuiNotificationsModule,
+    TuiDialogModule
   ],
-  providers: [],
+  providers: [{
+    provide: TUI_ICONS_PATH,
+    useValue: iconsPathFactory('assets/taiga-ui/icons/'),
+  }],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

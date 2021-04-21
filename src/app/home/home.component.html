@@ -3,5 +3,11 @@
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1>
 
+  <button tuiButton type="button" class="tui-space_right-3 tui-space_bottom-3" iconRight="tuiIconSearch"
+    [disabled]="true">
+    Disabled button
+  </button>
+  <tui-marker-icon src="tuiIconCallLarge"></tui-marker-icon>
+
   <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
 </div>
