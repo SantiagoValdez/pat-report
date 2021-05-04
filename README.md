@@ -17,6 +17,7 @@
 
 This is a hobby project heavily based on [angular-electron by Maximegris](https://github.com/maximegris/angular-electron), which was used as a seed to make this project, below for now we mantain the original `readme` for documentation purposes.
 
+This project use sqlite.
 
 # Introduction
 
