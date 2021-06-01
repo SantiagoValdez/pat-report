@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeModule } from './home/home.module';
 import { DetailModule } from './detail/detail.module';
 
+
 import { AppComponent } from './app.component';
 
 //TaigaUI
@@ -25,6 +26,7 @@ import {
 } from '@taiga-ui/core';
 
 import { iconsPathFactory, TUI_ICONS_PATH } from '@taiga-ui/core';
+import { ReportModule } from './report/report.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -42,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SharedModule,
     HomeModule,
     DetailModule,
+    ReportModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {
