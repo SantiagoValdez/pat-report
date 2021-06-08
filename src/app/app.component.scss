@@ -1,3 +1,13 @@
-:host {
-  color: aliceblue;
+:host {}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff !important
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #f00 !important
+  }
 }
