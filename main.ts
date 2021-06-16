@@ -1,4 +1,4 @@
-import { app, BrowserWindow, screen } from 'electron';
+import { app, BrowserWindow, Menu, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 import { bootstrapEvents } from './electron/ipc-events';
@@ -56,6 +56,27 @@ function createWindow(): BrowserWindow {
     win = null;
   });
 
+  
+  const menu = Menu.buildFromTemplate([
+    {
+      id: 'menu',
+      label: 'Menu',
+      submenu: [
+        {label:'Adjust Notification Value'},
+        {label:'CoinMarketCap'},
+        {
+          label:'Exit', 
+          click() { 
+            app.quit(); 
+          } 
+        }
+      ]
+    }
+  ]);
+
+  
+
+  Menu.getApplicationMenu().append(menu.getMenuItemById('menu'));
   return win;
 }
 

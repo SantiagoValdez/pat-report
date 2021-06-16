@@ -3,14 +3,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fff !important
+    color: #fff !important;
+    background: #101016 !important;
   }
 }
 
