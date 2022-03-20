@@ -152,3 +152,11 @@ Note: To make it work behind a proxy, you can add this proxy exception in your t
 [github-star]: https://github.com/santiagovaldez/pat-report/stargazers
 [twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/santiagovaldez/pat-report%20%F0%9F%91%8D
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/santiagovaldez/pat-report.svg?style=social
+
+
+### Things I need to add
+
+- PDF Generation
+- Form
+- DB 
+- etc.
